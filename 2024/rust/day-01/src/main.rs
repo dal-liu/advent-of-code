@@ -53,7 +53,7 @@ fn part2() -> io::Result<i32> {
     }
 
     Ok(vec
-        .into_iter()
+        .iter()
         .map(|x| {
             if let Some(count) = hash_map.get(&x) {
                 *count * x
